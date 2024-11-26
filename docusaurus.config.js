@@ -13,16 +13,6 @@ const config = {
   tagline: '我的地盘我做主',
   favicon: 'img/favicon.ico',
 
-  themes: [
-    // ... Your other themes.
-    [
-      require.resolve("@easyops-cn/docusaurus-search-local"),
-      ({
-        hashed: true,
-        language: ["en", "zh"],
-      }),
-    ],
-  ],
   // Set the production url of your site here
   url: 'https://your-docusaurus-site.example.com',
   // Set the /<baseUrl>/ pathname under which your site is served
@@ -37,9 +27,7 @@ const config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
+
   i18n: {
     defaultLocale: 'zh-CN',
     locales: ['zh-CN'],
@@ -150,6 +138,11 @@ const config = {
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
+      },
+      algolia: {
+        appId: 'ACLN7ZV0IS',
+        apiKey: '2a3182c85fd9323e07573cfbbb3d75d9',
+        indexName: 'index',
       },
     }),
 };
