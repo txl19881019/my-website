@@ -1,0 +1,55 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #07a4ff;
+  --ifm-color-primary-dark: #29784c;
+  --ifm-color-primary-darker: #277148;
+  --ifm-color-primary-darkest: #205d3b;
+  --ifm-color-primary-light: #33925d;
+  --ifm-color-primary-lighter: #359962;
+  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --search-local-modal-width: 480px;
+  --search-local-highlight-color: #5468ff;
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #0893e4;
+  --ifm-color-primary-dark: #21af90;
+  --ifm-color-primary-darker: #1fa588;
+  --ifm-color-primary-darkest: #1a8870;
+  --ifm-color-primary-light: #29d5b0;
+  --ifm-color-primary-lighter: #32d8b4;
+  --ifm-color-primary-lightest: #4fddbf;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+html[data-theme="dark"] {
+  --search-local-highlight-color: #d23669;
+}
+
+/* .hero {
+  background: url('/img/docusaurus.png') no-repeat center center;
+  background-size: cover;
+} */
+
+/* src/css/custom.css */
+.navbar__item {
+  margin: 0 20px; /* 设置左右间距 */
+  font-size: 16px; /* 设置字体大小 */
+  font-weight: bold; /* 可选：设置字体粗细 */
+}
+
+.navbar__item img {
+  margin: 0; /* 如果有图片，确保没有额外的间距 */
+  height: 30px; /* 如果有图片，确保图片高度合适 */
+  width: auto; /* 保持宽高比 */ 
+}
+
